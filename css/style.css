@@ -1,5 +1,8 @@
+/* Fonts googlefonts */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@200..700&family=Poppins:wght@400;500;600;700;800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
 
 
+/* Estilo Geral */
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +10,8 @@
 }
 
 body{
-    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.7rem;
     background-color: #000;
     height: 100vh;
 }
@@ -15,4 +19,51 @@ body{
 .interface{
     max-width: 1280px;
     margin: 0 auto;
+}
+
+/* Estilo Cabeçalho*/
+
+header{
+    padding: 2.5rem 4%;
+}
+
+header > .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.2);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 2.5rem;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0 0 8px #a9f8ac;
 }
