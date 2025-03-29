@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@200..700&family=Poppins:wght@400;500;600;700;800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
 
 
-/* Estilo Geral */
+/* ESTILO GERAL */
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +21,39 @@ body{
     margin: 0 auto;
 }
 
-/* Estilo Cabeçalho*/
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+h2.titulo{
+    font-size: 2.7rem;
+    color: #fff;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #00ff08;
+}
+
+button:hover{
+    box-shadow: 0 0 8px #a9f8ac;
+    transform: scale(1.2);
+}
+
+/* --------- FIM --------- */
+
+/* ESTILO CABEÇALHO */
 
 header{
     padding: 2.5rem 4%;
@@ -54,16 +86,123 @@ header nav ul li{
     padding: 0 2.5rem;
 }
 
-header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #00ff08;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 2.5rem 4%;
 }
 
-header .btn-contato button:hover{
-    box-shadow: 0 0 8px #a9f8ac;
+section.topo-do-site .flex{
+    justify-content: center;
+    align-items: center;
+    gap: 5.5rem; 
+}
+    
+.topo-do-site h1{
+    font-size: 3rem;
+    color: #fff;
+    line-height: 2.2rem;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #00ff08;
+    font-size: 6rem;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 2.5rem 0;
+}
+
+/* ------------------- */
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+/* --------- FIM --------- */
+
+/* ESTILO DO ESPECIALIDDES */
+section.especia{
+    padding: 2.5rem 4%;
+}
+
+section.especia .flex{
+    gap: 3.7rem;
+}
+
+.especia .especia-box{
+    color: #fff;
+    padding: 2.5rem;
+    /* border: 2px solid #fff; */
+    border-radius: 2rem;
+    margin-top: 3rem;
+    transition: 0.3s;
+}
+
+.especia .especia-box:hover{
+    transition: scale(1.1);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.especia .especia-box i{
+    font-size: 4.5rem;
+    color: #00ff08;
+}
+
+
+.especia .especia-box h3{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+/* ----------------------- */
+
+/* ESTILO DO SOBRE */
+section.sobre{
+    padding: 7rem 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 3.7rem;
+}
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 2.7rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #00ff08;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 1.5rem 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ff08;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin: 0 0.35rem;
+    transition: 0.2s;
 }
